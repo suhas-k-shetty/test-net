@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "example_package_sks"
+version = "0.0.1"
+authors = [
+    {name="SKS", email="sks@example.com"},
+]
+description = "Learning to package a python program"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/suhas-k-shetty/test-net"
+"Bug Tracker" = "https://github.com/suhas-k-shetty/test-net/issues"
