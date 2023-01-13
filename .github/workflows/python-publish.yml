@@ -8,18 +8,11 @@
 
 name: Upload Python Package
 
-# on:
-#   release:
-#     types: [published]
-
 on:
   push:
     branches: ['master']
   pull_request:
     branches: ['master']
-
-permissions:
-  contents: read
 
 jobs:
   build:
@@ -39,7 +32,7 @@ jobs:
         run: python -m build
       - uses: actions/upload-artifact@v3
         with:
-          name: my-artifact
+          name: My-Artifact
           path: dist/
       - name: Create Release
         id: create_release
