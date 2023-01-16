@@ -48,8 +48,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
-          tag_name: v.0.0.8
-          release_name: Release from github actions
+          tag_name: v.0.0.9
+          release_name: Release with assets
           body_path: CHANGELOG.md
           draft: false
           prerelease: false
